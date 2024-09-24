@@ -12,7 +12,6 @@ edition = { workspace = true }
 [dependencies]
 bs58 = { workspace = true }
 bv = { workspace = true, features = ["serde"] }
-lazy_static = { workspace = true }
 log = { workspace = true, features = ["std"] }
 serde = { workspace = true, features = ["derive", "rc"] }
 serde_bytes = { workspace = true }
@@ -30,8 +29,8 @@ memmap2 = { workspace = true }
 subtle = { workspace = true }
 
 [target.'cfg(not(target_os = "solana"))'.dev-dependencies]
-solana-logger = { workspace = true }
 bitflags = { workspace = true }
+solana-logger = { workspace = true }
 
 [build-dependencies]
 rustc_version = { workspace = true }
